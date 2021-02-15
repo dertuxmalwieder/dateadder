@@ -69,7 +69,7 @@ func main() {
 	lastdatetoken := plustoken - 1
 	firstnumtoken := plustoken + 1
 	lastnumtoken := unitstoken - 1
-
+	
 	if lastnumtoken == plustoken {
 		// "plus days" or something.
 		fmt.Printf("Failed to find the number of %s. Aborting.\n", units)
@@ -79,7 +79,7 @@ func main() {
 	datestring := ""
 	if lastdatetoken > 0 {
 		datestring = strings.Join(split[:lastdatetoken], " ")
-	} else if lastdatetoken == 0 {
+	} else if lastdatetoken < 0 {
 		// Looks like there is no date.
 		// Assume "today" by default.
 		datestring = "today"
