@@ -69,7 +69,7 @@ func main() {
 	lastdatetoken := plustoken - 1
 	firstnumtoken := plustoken + 1
 	lastnumtoken := unitstoken - 1
-	
+
 	if lastnumtoken == plustoken {
 		// "plus days" or something.
 		fmt.Printf("Failed to find the number of %s. Aborting.\n", units)
@@ -86,7 +86,7 @@ func main() {
 	} else {
 		datestring = split[0]
 	}
-	
+
 	numstring := ""
 	if firstnumtoken == lastnumtoken {
 		numstring = split[firstnumtoken]
@@ -116,6 +116,9 @@ func main() {
 	if IsNumeric(numstring) {
 		int, _ := strconv.Atoi(numstring)
 		num_in = int
+	} else if numstring == "a" {
+		// "a month" etc.
+		num_in = 1
 	} else {
 		// Try to parse the input number.
 		i, err := numwords.ParseInt(numstring)
@@ -128,13 +131,13 @@ func main() {
 	}
 
 	if units == "day" || units == "days" {
-		date_out = date_out.AddDate(0, 0, num_in)
+		date_out = date_in.AddDate(0, 0, num_in)
 	} else if units == "week" || units == "weeks" {
-		date_out = date_out.AddDate(0, 0, num_in*7)
+		date_out = date_in.AddDate(0, 0, num_in*7)
 	} else if units == "month" || units == "months" {
-		date_out = date_out.AddDate(0, num_in, 0)
+		date_out = date_in.AddDate(0, num_in, 0)
 	} else if units == "year" || units == "years" {
-		date_out = date_out.AddDate(num_in, 0, 0)
+		date_out = date_in.AddDate(num_in, 0, 0)
 	}
 
 	fmt.Printf("%s\n", date_out.Format("Monday, January _2 2006"))
