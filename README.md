@@ -14,6 +14,13 @@ Posted here for your convenience.
 
 Et cetera, et cetera.
 
+## Building and installation
+
+    % fossil clone https://code.rosaelefanten.org/dateadder dateadder.fossil
+    % mkdir dateadder ; cd dateadder ; fossil open ../dateadder.fossil
+    % cd src
+    % go build
+
 ## URLs
 
 Upstream Fossil repository:
@@ -22,14 +29,10 @@ https://code.rosaelefanten.org/dateadder
 Git clone:
 https://github.com/dertuxmalwieder/dateadder
 
-Note that I will only actively use the Fossil one. Please contact me if you want to contribute.
+Note that I will only actively use the Fossil one. Please contact me if you want to contribute:
 
-## Building and installation
-
-    % fossil clone https://code.rosaelefanten.org/dateadder dateadder.fossil
-    % mkdir dateadder ; cd dateadder ; fossil open ../dateadder.fossil
-    % cd src
-    % go build
+* Twitter: [@tux0r](https://twitter.com/tux0r)
+* Mail: `github <> tuxproject <> de`
 
 ## Support
 
