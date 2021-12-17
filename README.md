@@ -17,8 +17,7 @@ Et cetera, et cetera.
 ## Building and installation
 
     % fossil clone https://code.rosaelefanten.org/dateadder dateadder.fossil
-    % mkdir dateadder ; cd dateadder ; fossil open ../dateadder.fossil
-    % cd src
+    % cd dateadder/src
     % go build
 
 ## URLs
