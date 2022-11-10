@@ -31,7 +31,8 @@ https://github.com/dertuxmalwieder/dateadder
 Note that I will only actively use the Fossil one. Please contact me if you want to contribute:
 
 * Twitter: [@tux0r](https://twitter.com/tux0r)
-* Mail: `github <> tuxproject <> de`
+* Mastodon: [@tux0r@layer8.space](https://layer8.space/@tux0r)
+* Mail: `git <> tuxproject <> de`
 
 ## Support
 
